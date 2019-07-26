@@ -28,7 +28,7 @@ pause;
  % options for training the net if your newnet performance is low decrease
  % the learning_rate
  learning_rate = 0.0001;
- opts = trainingOptions("adam","InitialLearnRate",learning_rate,'MiniBatchSize',64,'Plots','training-progress');
+ opts = trainingOptions("adam","InitialLearnRate",learning_rate,'MaxEpochs',5,'MiniBatchSize',64,'Plots','training-progress');
  [newnet,info] = trainNetwork(Train, ly, opts);
  fprintf('Program paused. Press enter to continue.\n');
  pause;
