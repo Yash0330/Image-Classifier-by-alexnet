@@ -15,7 +15,7 @@ im.ReadFcn = @(loc)imresize(imread(loc),[227,227]);
 [Train ,Test] = splitEachLabel(im,0.8,'randomized');
 
 
-fprintf('Program paused. Press enter to continue.\n');
+fprintf('Program paused. \nYou can press stop button manually on tranining plot(on top right corner besides number of iterations) once accuracy reaches upto desired level. Press enter to continue.\n');
 pause;
 %% =============== Part 2: Training Data ================
 
